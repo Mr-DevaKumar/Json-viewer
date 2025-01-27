@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">JSON Viewer</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="viewer.html" class="active">JSON Viewer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="viewer-section">
+            <div class="container">
+                <h1 class="viewer-title">JSON Viewer</h1>
+                <p class="viewer-description">Upload a JSON file to view its content in a formatted and structured
+                    layout.</p>
+
+                <div class="upload-section">
+                    <input type="file" id="file-input" accept=".json" class="file-input">
+                    <button id="start-button" class="btn" disabled>Start Producing</button>
+                </div>
+
+                <div id="json-viewer" class="json-container">
+                    <p class="placeholder">The formatted JSON data will appear here.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 JSON Viewer. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
